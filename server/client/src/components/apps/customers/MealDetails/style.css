@@ -1,0 +1,14 @@
+.small-input {
+  -moz-appearance: textfield;
+  border: 1px solid #c2c2c2;
+  border-radius: 5px;
+  padding-left: 5px;
+}
+.small-input::-webkit-inner-spin-button {
+  display: none;
+}
+.small-input::-webkit-outer-spin-button,
+.small-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

@@ -1,0 +1,5 @@
+.react-daterange-picker__wrapper,
+.react-date-picker__wrapper {
+  border-radius: 5px;
+  padding: 4px;
+}

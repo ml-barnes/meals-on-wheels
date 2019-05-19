@@ -1,0 +1,7 @@
+node_modules
+.DS_store
+client/node_modules
+/csv
+client-records-2019.csv
+
+package-lock.json
