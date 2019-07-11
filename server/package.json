@@ -1,9 +1,9 @@
 {
-  "name": "react-server-boilerplate",
+  "name": "mow-backend",
   "version": "1.0.0",
   "main": "server.js",
-  "repository": "git@github.com:traut029/react-server-boilerplate.git",
-  "author": "Eric Trautmiller",
+  "repository": "git@gitlab.op-bit.nz:BIT/Project/Meals_On_Wheels.git",
+  "author": "Mike Barnes & Leighton Nicholls",
   "license": "MIT",
   "proxy": "http://localhost:3001",
   "scripts": {
@@ -18,16 +18,14 @@
     "nodemon": "^1.11.0"
   },
   "dependencies": {
+    "bcrypt": "^3.0.6",
     "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.4",
     "cors": "^2.8.5",
     "express": "^4.15.4",
-    "leaflet-geosearch": "^2.7.0",
-    "mysql2": "^1.5.3",
-    "papaparse": "^4.6.3",
-    "pg": "^7.10.0",
-    "rc-input-number": "^4.4.1",
-    "react-csv": "^1.1.1",
-    "react-scripts": "^2.1.8",
+    "json-diff": "^0.5.4",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^7.11.0",
     "sequelize": "^4.43.2"
   }
 }

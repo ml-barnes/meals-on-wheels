@@ -21,7 +21,10 @@ module.exports = function(sequelize, Sequelize) {
           "Alternative",
           "Fruit",
           "Sandwich",
-          "Dessert"
+          "Dessert",
+          "Meal" // Added meal as a food (For meal options in restriction form)
+                 // This doesn't make sense but the data is the same so saves making 
+                 // A new table for one small thing
         )
       }
     },

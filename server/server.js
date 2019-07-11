@@ -5,19 +5,22 @@ const app = express();
 const bodyParser = require("body-parser");
 var sequelize = require("./db/models").sequelize;
 var cors = require("cors");
-
+const cookieParser = require("cookie-parser");
+const jwt = require("jsonwebtoken");
 var indexRouter = require("./routes/index");
 
 // Configure body parser for AJAX requests
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(cookieParser());
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "http://localhost:3000");
   res.header(
     "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept"
+    "Origin, X-Requested-With, Content-Type, Accept, authorization, Cookies, Set-Cookie"
   );
+  res.header("Access-Control-Allow-Credentials", "true");
   next();
 });
 

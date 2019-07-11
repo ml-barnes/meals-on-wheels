@@ -1,0 +1,54 @@
+.small-input {
+  -moz-appearance: textfield;
+  border: 1px solid #c2c2c2;
+  border-radius: 5px;
+  width: 30px;
+  height: 100%;
+  text-align: center;
+}
+
+.quantity-input {
+  -moz-appearance: textfield;
+  border: 1px solid #c2c2c2;
+  border-radius: 5px;
+  width: 50%;
+  height: 38px;
+  text-align: center;
+}
+
+.small-input::-webkit-inner-spin-button {
+  display: none;
+}
+.small-input::-webkit-outer-spin-button,
+.small-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.iconImage {
+  width: 28px;
+  height: 28px;
+  pointer-events: none;
+  padding: 0px;
+}
+
+.mealIconButton {
+  padding: 5px;
+}
+
+.flexVertCenter {
+  align-self: center;
+  height: 20px;
+}
+
+.hiddenDate {
+  visibility: hidden;
+}

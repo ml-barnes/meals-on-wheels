@@ -228,7 +228,7 @@ const data = [
   { type: "Alternative", name: "Savoury Mince" },
   { type: "Vegetarian", name: "Rice Crusted Quiche" },
   { type: "Vegetable", name: "Scalloped Vegatables" },
-  { type: "Vegetable", name: "Silverbeet," },
+  { type: "Vegetable", name: "Silverbeet" },
   { type: "Vegetable", name: "Potatoes" },
   { type: "Dessert", name: "Apple Sponge Crisp with Custard" },
   { type: "Soup", name: "Chicken & Noodle" },

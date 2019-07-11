@@ -20,3 +20,15 @@ customRadio {
   border: 1px solid #222;
   outline: none;
 }
+
+.warning-snackbar > div {
+  background-color: red;
+}
+
+.success-snackbar > div {
+  background-color: green;
+}
+
+.red > :first-child {
+  border: 1px solid red;
+}

@@ -1,6 +1,6 @@
 // Example code for how models should be structured
 
-module.exports = function(sequelize, Sequelize) {
+module.exports = function (sequelize, Sequelize) {
   var Extra = sequelize.define(
     "Extra",
     {

@@ -4,9 +4,26 @@ const Extra = require("../db/models").Extra;
 module.exports = {
   getCustomers(req, res) {
     return Customer.findAll({
-      include: [Extra]
+      //include: [Extra]
     })
       .then(customers => res.status(200).send(customers))
+      .catch(error => {
+        res.status(400).send(error);
+      });
+  },
+
+  updateCustomerActive(req, res) {
+    return Customer.find({
+      where: {
+        id: req.body.id
+      }
+    })
+      .then(customer => {
+        customer.active = !customer.active;
+        customer.save().then(customer => {
+          res.status(200).send(customer);
+        });
+      })
       .catch(error => {
         res.status(400).send(error);
       });
@@ -57,11 +74,7 @@ module.exports = {
       });
   },
   createCustomer(req, res) {
-    console.log(req.body);
     return Customer.create(req.body)
-      .then(newCustomer => {
-        console.log("newCustomer's auto-generated ID:", newCustomer.id);
-      })
       .then(newCustomer => res.status(200).send(newCustomer))
       .catch(error => {
         res.status(400).send(error);

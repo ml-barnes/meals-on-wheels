@@ -1,0 +1,14 @@
+.leaflet-container {
+  height: 400px;
+  width: 100%;
+}
+
+.rbt-input-main {
+  background-image: none;
+}
+
+.rbt-input-main,
+.form-control.is-valid,
+.was-validated .form-control:valid {
+  background-image: none;
+}

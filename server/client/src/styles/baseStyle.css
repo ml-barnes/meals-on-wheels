@@ -1,0 +1,41 @@
+.baseRow {
+  margin-top: 2%;
+}
+
+.baseButtonColumn {
+  text-align: center;
+  padding: 0;
+}
+
+.baseContainer {
+  padding: 0;
+  flex-grow: 1;
+}
+
+.baseDiv {
+  border: 2px solid #e0e1e2;
+  background: #f8f9fa;
+  border-radius: 5px;
+  padding-top: 20px;
+  margin-bottom: 1%;
+}
+
+.baseCenterError {
+  text-align: center;
+  margin-top: 3%;
+}
+
+.baseHeader {
+  border: 1px solid #ececed;
+  align-items: center;
+  text-align: center;
+  background: #f3f4f5;
+  box-shadow: 1px 1px 5px gray;
+}
+
+.spinnerCol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
